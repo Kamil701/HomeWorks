@@ -17,6 +17,17 @@
 		601FCCB92ABA20D100409803 /* BasicImage+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCB82ABA20D100409803 /* BasicImage+ViewModel.swift */; };
 		601FCCBC2ABA20E800409803 /* BasicLabel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCBB2ABA20E800409803 /* BasicLabel .swift */; };
 		601FCCBE2ABA20F700409803 /* BasicLabel+ViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCBD2ABA20F700409803 /* BasicLabel+ViewModel .swift */; };
+		601FCCC12ABB59AD00409803 /* BackenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCC02ABB59AD00409803 /* BackenAPI.swift */; };
+		601FCCC32ABB59C200409803 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCC22ABB59C200409803 /* ImageModel.swift */; };
+		601FCCC52ABB59CE00409803 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCC42ABB59CE00409803 /* NetworkManager.swift */; };
+		601FCCC82ABB5B6400409803 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 601FCCC72ABB5B6400409803 /* Moya */; };
+		601FCCCB2ABB5B8400409803 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 601FCCCA2ABB5B8400409803 /* SnapKit */; };
+		601FCCCE2ABB60B800409803 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCCD2ABB60B800409803 /* FirstViewController.swift */; };
+		601FCCD02ABB60DD00409803 /* FirstViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCCF2ABB60DD00409803 /* FirstViewController+ViewModel.swift */; };
+		601FCCD32ABB632300409803 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCD22ABB632300409803 /* CollectionView.swift */; };
+		601FCCD52ABB633600409803 /* CollectionView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCD42ABB633600409803 /* CollectionView+ViewModel.swift */; };
+		601FCCD82ABB755E00409803 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCD72ABB755E00409803 /* BasicCollectionViewCell.swift */; };
+		601FCCDA2ABB7D8E00409803 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FCCD92ABB7D8E00409803 /* BasicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +43,15 @@
 		601FCCB82ABA20D100409803 /* BasicImage+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasicImage+ViewModel.swift"; sourceTree = "<group>"; };
 		601FCCBB2ABA20E800409803 /* BasicLabel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasicLabel .swift"; sourceTree = "<group>"; };
 		601FCCBD2ABA20F700409803 /* BasicLabel+ViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasicLabel+ViewModel .swift"; sourceTree = "<group>"; };
+		601FCCC02ABB59AD00409803 /* BackenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackenAPI.swift; sourceTree = "<group>"; };
+		601FCCC22ABB59C200409803 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		601FCCC42ABB59CE00409803 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		601FCCCD2ABB60B800409803 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		601FCCCF2ABB60DD00409803 /* FirstViewController+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+ViewModel.swift"; sourceTree = "<group>"; };
+		601FCCD22ABB632300409803 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		601FCCD42ABB633600409803 /* CollectionView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+ViewModel.swift"; sourceTree = "<group>"; };
+		601FCCD72ABB755E00409803 /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
+		601FCCD92ABB7D8E00409803 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601FCCC82ABB5B6400409803 /* Moya in Frameworks */,
+				601FCCCB2ABB5B8400409803 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +86,10 @@
 		601FCCA02ABA208400409803 /* Hotel */ = {
 			isa = PBXGroup;
 			children = (
+				601FCCD62ABB751800409803 /* BasicComponents */,
+				601FCCD12ABB630200409803 /* Views */,
+				601FCCCC2ABB608D00409803 /* ViewControllers */,
+				601FCCBF2ABB599200409803 /* Requests */,
 				601FCCBA2ABA20D500409803 /* BasicLabel  */,
 				601FCCB52ABA20AF00409803 /* BasicImage */,
 				601FCCA12ABA208400409803 /* AppDelegate.swift */,
@@ -95,6 +121,43 @@
 			path = "BasicLabel ";
 			sourceTree = "<group>";
 		};
+		601FCCBF2ABB599200409803 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				601FCCC02ABB59AD00409803 /* BackenAPI.swift */,
+				601FCCC22ABB59C200409803 /* ImageModel.swift */,
+				601FCCC42ABB59CE00409803 /* NetworkManager.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		601FCCCC2ABB608D00409803 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				601FCCCD2ABB60B800409803 /* FirstViewController.swift */,
+				601FCCCF2ABB60DD00409803 /* FirstViewController+ViewModel.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		601FCCD12ABB630200409803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				601FCCD22ABB632300409803 /* CollectionView.swift */,
+				601FCCD42ABB633600409803 /* CollectionView+ViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		601FCCD62ABB751800409803 /* BasicComponents */ = {
+			isa = PBXGroup;
+			children = (
+				601FCCD72ABB755E00409803 /* BasicCollectionViewCell.swift */,
+				601FCCD92ABB7D8E00409803 /* BasicViewController.swift */,
+			);
+			path = BasicComponents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +174,10 @@
 			dependencies = (
 			);
 			name = Hotel;
+			packageProductDependencies = (
+				601FCCC72ABB5B6400409803 /* Moya */,
+				601FCCCA2ABB5B8400409803 /* SnapKit */,
+			);
 			productName = Hotel;
 			productReference = 601FCC9E2ABA208400409803 /* Hotel.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +206,10 @@
 				Base,
 			);
 			mainGroup = 601FCC952ABA208400409803;
+			packageReferences = (
+				601FCCC62ABB5B6400409803 /* XCRemoteSwiftPackageReference "Moya" */,
+				601FCCC92ABB5B8400409803 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 601FCC9F2ABA208400409803 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,13 +237,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601FCCC12ABB59AD00409803 /* BackenAPI.swift in Sources */,
 				601FCCB72ABA20C100409803 /* BasicImage.swift in Sources */,
+				601FCCC52ABB59CE00409803 /* NetworkManager.swift in Sources */,
 				601FCCBE2ABA20F700409803 /* BasicLabel+ViewModel .swift in Sources */,
 				601FCCA62ABA208400409803 /* ViewController.swift in Sources */,
+				601FCCDA2ABB7D8E00409803 /* BasicViewController.swift in Sources */,
+				601FCCD52ABB633600409803 /* CollectionView+ViewModel.swift in Sources */,
+				601FCCD32ABB632300409803 /* CollectionView.swift in Sources */,
+				601FCCC32ABB59C200409803 /* ImageModel.swift in Sources */,
 				601FCCBC2ABA20E800409803 /* BasicLabel .swift in Sources */,
 				601FCCB92ABA20D100409803 /* BasicImage+ViewModel.swift in Sources */,
+				601FCCD82ABB755E00409803 /* BasicCollectionViewCell.swift in Sources */,
+				601FCCD02ABB60DD00409803 /* FirstViewController+ViewModel.swift in Sources */,
 				601FCCA22ABA208400409803 /* AppDelegate.swift in Sources */,
 				601FCCA42ABA208400409803 /* SceneDelegate.swift in Sources */,
+				601FCCCE2ABB60B800409803 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +470,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		601FCCC62ABB5B6400409803 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		601FCCC92ABB5B8400409803 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		601FCCC72ABB5B6400409803 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601FCCC62ABB5B6400409803 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		601FCCCA2ABB5B8400409803 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601FCCC92ABB5B8400409803 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 601FCC962ABA208400409803 /* Project object */;
 }

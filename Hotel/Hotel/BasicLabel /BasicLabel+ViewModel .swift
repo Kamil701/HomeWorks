@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+extension BasicLabel {
+    final class ViewModel {
+        @Published var text: String?
+    }
+}
+
