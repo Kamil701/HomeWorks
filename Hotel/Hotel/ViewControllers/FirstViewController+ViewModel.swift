@@ -19,8 +19,10 @@ extension FirstViewController {
         
         func getInfo() {
             NetworkManager().getNews { [weak self] info in
-                info.image.forEach { image in
-                    let collectionVM = CollectionView.ViewModel(image)
+                let images = info.image
+                
+                images.forEach { image in
+                    let collectionVM = CollectionView.ViewModel(images)
                     self?.images.append(collectionVM)
                 }
             }

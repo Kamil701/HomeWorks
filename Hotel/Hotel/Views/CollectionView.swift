@@ -15,6 +15,8 @@ class CollectionView: UIView {
     
     init() {
         super.init(frame: .zero)
+        makeLayout()
+        makeConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -28,7 +30,6 @@ class CollectionView: UIView {
     private func makeConstraints() {
         imageView.snp.makeConstraints { make in
             make.leading.trailing.top.equalToSuperview()
-            make.height.equalTo(self.snp.width).multipliedBy(0.56)
         }
     }
     

@@ -20,6 +20,7 @@ class FirstViewController: BasicViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         layout.scrollDirection = .horizontal
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(
             TopCollectionView.self,
             forCellWithReuseIdentifier: String(describing: TopCollectionView.self)
@@ -70,6 +71,9 @@ class FirstViewController: BasicViewController {
     
     override func binding() {
         super.binding()
+        
+        emptyLabel.setViewModel(viewModel.emptyLabelVM)
+        
         viewModel.$images
             .receive(on: DispatchQueue.main)
             .sink { [weak self] info in
@@ -94,5 +98,16 @@ extension FirstViewController: UICollectionViewDataSource {
         return newCell
     }
     
+    
+}
+
+extension FirstViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 300, height: 300)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
     
 }

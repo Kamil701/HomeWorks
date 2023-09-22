@@ -11,8 +11,8 @@ extension CollectionView {
     final class ViewModel {
         let imageView = BasicImage.ViewModel()
         
-        init(_ image: String) {
-            self.imageView.setImageFrom(urls: image)
+        init(_ image: [String]) {
+            self.imageView.setImages(images: image)
         }
         
     }

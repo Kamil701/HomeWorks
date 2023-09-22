@@ -12,6 +12,12 @@ extension BasicImage {
     final class ViewModel {
         @Published var image: UIImage?
         
+        func setImages(images: [String]) {
+            for image in images {
+                setImageFrom(urls: image)
+            }
+        }
+        
         func setImageFrom(urls: String) {
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 guard let urls = URL(string: urls),
